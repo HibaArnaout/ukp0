@@ -16,10 +16,10 @@ echo "Description: $description";
 
 echo "Renaming project..."
 
-original_author="akatief"
-original_name="template_workshop"
-original_urlname="template-workshop"
-original_description="Awesome template_workshop created by akatief"
+original_author="HibaArnaout"
+original_name="ukp0"
+original_urlname="ukp0"
+original_description="Awesome ukp0 created by HibaArnaout"
 # Iterate over all files in the repository
 git ls-files | while read -r filename; do
     # Exclude .github/workflows/rename_project.yml from renaming

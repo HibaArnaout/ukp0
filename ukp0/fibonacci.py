@@ -3,6 +3,7 @@ class Fibonacci:
         self.mem = {}
 
     def fib(self, n: int) -> int:
-        ##### YOUR CODE HERE #####
-        return 0
+        if n == 0 or n == 1:
+            return n
+        return self.fib(n-1) + self.fib(n-2)
         ##########################

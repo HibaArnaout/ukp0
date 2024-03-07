@@ -1,4 +1,6 @@
-"""CLI interface for ukp0 project.
+"""
+
+CLI interface for ukp0 project.
 
 Be creative! do whatever you want!
 
@@ -6,8 +8,10 @@ Be creative! do whatever you want!
 - Use builtin argparse
 - Start a web application
 - Import things from your .base module
-"""
 
+"""
+import sys
+from ukp0 import Fibonacci
 
 def main():  # pragma: no cover
     """
@@ -25,6 +29,5 @@ def main():  # pragma: no cover
         * List all available tasks
         * Run an application (Flask, FastAPI, Django, etc.)
     """
-    ##### YOUR CODE HERE #####
-    print("This will do something")
-    ##########################
+    fibonacci = Fibonacci()
+    print(fibonacci.fib(int(sys.argv[1])))
